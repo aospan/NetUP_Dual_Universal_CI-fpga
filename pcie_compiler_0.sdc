@@ -1,3 +1,9 @@
+# NetUP Universal Dual DVB-CI FPGA firmware
+# http://www.netup.tv
+#
+# Copyright (c) 2014 NetUP Inc, AVB Labs
+# License: GPLv3
+
 # The refclk assignment may need to be renamed to match design top level port name.
 # May be desireable to move refclk assignment to a top level SDC file.
 create_clock -period "100 MHz" -name {refclk_pcie_compiler_0} {PCI_REFCLK}

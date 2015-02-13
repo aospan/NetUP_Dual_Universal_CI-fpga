@@ -1,4 +1,8 @@
-# $Id$
+# NetUP Universal Dual DVB-CI FPGA firmware
+# http://www.netup.tv
+#
+# Copyright (c) 2014 NetUP Inc, AVB Labs
+# License: GPLv3
 
 #**************************************************************
 # Create Clock
