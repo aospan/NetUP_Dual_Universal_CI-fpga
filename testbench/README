@@ -1,0 +1,26 @@
+==== 13 Feb 2015
+
+NetUP Universal Dual DVB-CI FPGA firmware simulation
+Universal card with two DVB-C, DVB-C2, DVB-T, DVB-T2, DVB-S, DVB-S2 inputs and two Common Interface slots. 
+http://www.netup.tv/en-EN/netup-universal-dual-dvb-ci
+
+FPGA: EP4CGX22CF19C8
+Series: Cyclone IV GX
+Number of Logic Elements/Cells: 21280
+Total RAM Bits: 774144
+Package: 324-FBGA (19x19)
+
+==== Firmware simulation
+
+* start modelsim
+$ /mnt/sdb/altera/14.1/modelsim_ase/bin/vsim
+
+* Open (File->Open) dvb_unici.mpf 
+
+* In "Library" remove "work" and create it again (workaround)
+
+* Run "Compile->Compile All"
+
+* Choose Project (for example, "ci_control_tb") and run "Execute"
+
+* Do simulation with "Simulate -> Run"
