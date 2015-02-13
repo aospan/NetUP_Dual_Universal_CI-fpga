@@ -1,0 +1,70 @@
+==== 13 Feb 2015
+
+NetUP Universal Dual DVB-CI FPGA firmware
+Universal card with two DVB-C, DVB-C2, DVB-T, DVB-T2, DVB-S, DVB-S2 inputs and two Common Interface slots. 
+http://www.netup.tv/en-EN/netup-universal-dual-dvb-ci
+
+==== Firmware compilation
+
+* Install Altera Quartus II Web Edition (free). Current version 14.1
+* Open project (File->Open Project) Dual_Universal_CI.qpf
+* Run "Processing -> Start Compilation". Compilation will take about 6 minutes on fast CPU
+* Resulting firmware placed into out/netup_unidvb_top.sof file
+
+==== Firmware preparation to upload into NetUP Universal Dual DVB-CI card
+
+netup_unidvb_top.sof file should be converted to netup_unidvb_top.bin.
+Below commands tested on Ubuntu Linux 14.10 with Altera Quartus II installed into /mnt/sdb/altera/14.1 and openjdk-8-jre package installed
+
+* setup environments
+$ /mnt/sdb/altera/14.1/nios2eds/nios2_command_shell.sh
+------------------------------------------------
+Altera Nios2 Command Shell [GCC 4]
+
+Version 14.1, Build 186
+------------------------------------------------
+
+* conversion to srec
+$ java -Xmx512m -jar /mnt/sdb/altera/14.1/nios2eds/bin/sof2flash.jar --input=netup_unidvb_top.sof --output=netup_unidvb_top.srec --compress --epcs --offset=0
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Convert_programming_file
+Info: Command: quartus_cpf --no_banner --convert --device=EPCS128 --option=netup_unidvb_top.opt netup_unidvb_top.sof netup_unidvb_top.pof
+Info (210033): Memory Map File netup_unidvb_top.map contains memory usage information for file netup_unidvb_top.pof
+Info: Quartus II 64-Bit Convert_programming_file was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 441 megabytes
+    Info: Processing ended: Fri Feb 13 13:24:09 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Convert_programming_file
+Info: Command: quartus_cpf --no_banner --convert netup_unidvb_top.pof netup_unidvb_top.rpd
+Info: Quartus II 64-Bit Convert_programming_file was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 434 megabytes
+    Info: Processing ended: Fri Feb 13 13:24:13 2015
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+* conversion to bin
+$ /mnt/sdb/altera/14.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/nios2-elf-objcopy -I srec -O binary netup_unidvb_top.srec netup_unidvb_top.bin
+
+==== Upload firmware (netup_unidvb_top.bin) to NetUP Universal Dual DVB-CI card
+* load m25p80 if not already loaded
+$ modprobe m25p80
+
+* reload netup_unidvb.ko with spi_enable=1 
+$ rmmod netup_unidvb.ko && modprobe netup_unidvb.ko spi_enable=1)
+
+* check mtd file for proper mtd device number
+$ cat /proc/mtd
+dev:    size   erasesize  name
+mtd0: 01000000 00040000 "fpga_04:00.0"
+
+* write firmware to flash
+$ flashcp -v netup_unidvb_top.bin /dev/mtd0
+Erasing blocks: 2/2 (100%)
+Writing data: 387k/0k (100%)
+Verifying data: 387k/0k (100%)
+
+DONE
+
+==== Remember to POWER OFF card (reset not enough) to new firmware take effect ==
