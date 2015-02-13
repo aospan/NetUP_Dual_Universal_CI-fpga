@@ -1,0 +1,72 @@
+# clk_0
+# spi_master_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) spi_master_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) spi_master.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) spi_ram_buffer.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) spi_master_0.vhd]
+# twi_master_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) twi_master_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) twi_master.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) twi_master_0.vhd]
+# fifo_out_8b_sync_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) fifo_out_8b_sync_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) fifo_out_8b_sync.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) fifo_out_8b_sync_0.vhd]
+# fifo_in_8b_sync_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) fifo_in_8b_sync_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) fifo_in_8b_sync.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) fifo_in_8b_sync_0.vhd]
+# twi_master_1
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) twi_master_1.vhd]
+# fifo_out_8b_sync_1
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) fifo_out_8b_sync_1.vhd]
+# fifo_in_8b_sync_1
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) fifo_in_8b_sync_1.vhd]
+# int_ctrl_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) int_ctrl_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) int_ctrl.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) int_ctrl_0.vhd]
+# gpout_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) gpout_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) gpout.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) gpout_0.vhd]
+# dma_arbiter_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) dma_arbiter_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dma_arbiter.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dma_arbiter_0.vhd]
+# pipeline_bridge_0
+# dvb_dma_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) dvb_dma_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_dma.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) avblabs_common_pkg.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_dma_fifo_ram.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_dma_0.vhd]
+# dvb_dma_1
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_dma_1.vhd]
+# pcie_compiler_0
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) pcie_compiler_0.qip]
+# ci_bridge_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ci_bridge_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) ci_bridge.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) ci_control.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) ci_bridge_0.vhd]
+# avalon64_to_avalon8_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) avalon64_to_avalon8_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) avalon64_to_avalon8.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) avalon64_to_avalon8_0.vhd]
+# dvb_ts_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) dvb_ts_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_ts.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) pid_table_ram.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_ts_filter.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_ts_sync.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) afifo_ptr.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_ts_shaper.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_ts_0.vhd]
+# dvb_ts_1
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dvb_ts_1.vhd]
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "0025D37D94FC00000147ED00EC26"
+set_global_assignment -entity "unici_core" -name IP_TOOL_NAME "sopc"
+set_global_assignment -entity "unici_core" -name IP_TOOL_VERSION "11.1sp2"
+set_global_assignment -entity "unici_core" -name IP_TOOL_ENV "sopc"

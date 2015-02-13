@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="unici_core">
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element pcie_compiler_0.Control_Register_Access
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element pcie_compiler_0.Tx_Interface
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element avalon64_to_avalon8_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element int_ctrl_0.avalon_cra
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18576";
+         type = "long";
+      }
+   }
+   element int_ctrl_0.avalon_slave
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "0";
+         type = "long";
+      }
+   }
+   element fifo_out_8b_sync_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18448";
+         type = "long";
+      }
+   }
+   element dvb_ts_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "20480";
+         type = "long";
+      }
+   }
+   element twi_master_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+      datum baseAddress
+      {
+         value = "18432";
+         type = "long";
+      }
+   }
+   element gpout_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18560";
+         type = "long";
+      }
+   }
+   element ci_bridge_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18816";
+         type = "long";
+      }
+   }
+   element fifo_out_8b_sync_1.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18512";
+         type = "long";
+      }
+   }
+   element dvb_dma_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18688";
+         type = "long";
+      }
+   }
+   element dvb_dma_1.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18752";
+         type = "long";
+      }
+   }
+   element spi_master_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "16384";
+         type = "long";
+      }
+   }
+   element dvb_ts_1.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "22528";
+         type = "long";
+      }
+   }
+   element twi_master_1.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+      datum baseAddress
+      {
+         value = "18496";
+         type = "long";
+      }
+   }
+   element fifo_in_8b_sync_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18464";
+         type = "long";
+      }
+   }
+   element fifo_in_8b_sync_1.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "18528";
+         type = "long";
+      }
+   }
+   element avalon64_to_avalon8_0.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "262144";
+         type = "long";
+      }
+   }
+   element twi_master_0.avalon_streaming_source
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element pcie_compiler_0.bar0_Non_Prefetchable
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element ci_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
+   element clk_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element dma_arbiter_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element dvb_dma_0
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element dvb_dma_1
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element dvb_ts_0
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+   }
+   element dvb_ts_1
+   {
+      datum _sortIndex
+      {
+         value = "18";
+         type = "int";
+      }
+   }
+   element fifo_in_8b_sync_0
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element fifo_in_8b_sync_1
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element fifo_out_8b_sync_0
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element fifo_out_8b_sync_1
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element gpout_0
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+   }
+   element int_ctrl_0
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element pcie_compiler_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element pipeline_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element pipeline_bridge_0.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "0";
+         type = "long";
+      }
+   }
+   element spi_master_0
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element twi_master_0
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element twi_master_1
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element unici_core
+   {
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="EP4CGX22CF19C8" />
+ <parameter name="deviceFamily" value="STINGRAY" />
+ <parameter name="deviceSpeedGrade" value="" />
+ <parameter name="fabricMode" value="SOPC" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="true" />
+ <parameter name="hdlLanguage" value="VHDL" />
+ <parameter name="maxAdditionalLatency" value="0" />
+ <parameter name="projectName">Dual_Universal_CI.qpf</parameter>
+ <parameter name="sopcBorderPoints" value="true" />
+ <parameter name="systemHash" value="-122868129070" />
+ <parameter name="timeStamp" value="1408430535968" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <module kind="clock_source" version="11.1" enabled="1" name="clk_0">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module kind="spi_master" version="1.0" enabled="1" name="spi_master_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module kind="twi_master" version="1.0" enabled="1" name="twi_master_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module
+   kind="fifo_out_8b_sync"
+   version="1.0"
+   enabled="1"
+   name="fifo_out_8b_sync_0">
+  <parameter name="FIFO_DEPTH" value="16" />
+  <parameter name="BUS_WIDTH" value="32" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module
+   kind="fifo_in_8b_sync"
+   version="1.0"
+   enabled="1"
+   name="fifo_in_8b_sync_0">
+  <parameter name="FIFO_DEPTH" value="16" />
+  <parameter name="BUS_WIDTH" value="32" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module kind="twi_master" version="1.0" enabled="1" name="twi_master_1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module
+   kind="fifo_out_8b_sync"
+   version="1.0"
+   enabled="1"
+   name="fifo_out_8b_sync_1">
+  <parameter name="FIFO_DEPTH" value="16" />
+  <parameter name="BUS_WIDTH" value="32" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module
+   kind="fifo_in_8b_sync"
+   version="1.0"
+   enabled="1"
+   name="fifo_in_8b_sync_1">
+  <parameter name="FIFO_DEPTH" value="16" />
+  <parameter name="BUS_WIDTH" value="32" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module kind="int_ctrl" version="1.0" enabled="1" name="int_ctrl_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module kind="gpout" version="1.0" enabled="1" name="gpout_0">
+  <parameter name="POLARITY_MASK" value="0" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module kind="dma_arbiter" version="1.0" enabled="1" name="dma_arbiter_0">
+  <parameter name="MEM_ADDR_WIDTH" value="31" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module
+   kind="altera_avalon_pipeline_bridge"
+   version="11.1"
+   enabled="1"
+   name="pipeline_bridge_0">
+  <parameter name="burstEnable" value="false" />
+  <parameter name="dataWidth" value="64" />
+  <parameter name="downstreamPipeline" value="true" />
+  <parameter name="enableArbiterlock" value="false" />
+  <parameter name="masterAddressWidth" value="15" />
+  <parameter name="maxBurstSize" value="2" />
+  <parameter name="maximumPendingReadTransactions" value="3" />
+  <parameter name="upstreamPipeline" value="true" />
+  <parameter name="waitrequestPipeline" value="true" />
+ </module>
+ <module kind="dvb_dma" version="1.0" enabled="1" name="dvb_dma_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module kind="dvb_dma" version="1.0" enabled="1" name="dvb_dma_1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module
+   kind="altera_avalon_pcie_compiler"
+   version="11.1.259"
+   enabled="1"
+   name="pcie_compiler_0">
+  <parameter name="SOPCSystemName" value="unici_core" />
+  <parameter name="actualBAR0AvalonAddress" value="0" />
+  <parameter name="actualBAR0Size" value="15" />
+  <parameter name="actualBAR1AvalonAddress" value="262144" />
+  <parameter name="actualBAR1Size" value="18" />
+  <parameter name="actualBAR2AvalonAddress" value="0" />
+  <parameter name="actualBAR2Size" value="0" />
+  <parameter name="actualBAR3AvalonAddress" value="0" />
+  <parameter name="actualBAR3Size" value="0" />
+  <parameter name="actualBAR4AvalonAddress" value="0" />
+  <parameter name="actualBAR4Size" value="0" />
+  <parameter name="actualBAR5AvalonAddress" value="0" />
+  <parameter name="actualBAR5Size" value="0" />
+  <parameter name="allowedDeviceFamilies">[Stratix III, Stratix II, HardCopy II, Stratix II GX, Stratix, Stratix GX, Cyclone III LS, Cyclone V, Cyclone IV E, Cyclone IV GX, Cyclone III, Cyclone II, Cyclone, MAX II, MAX V, Arria GX, Stratix IV, Stratix V, Arria II GX, HardCopy III, HardCopy IV, Arria II GZ, Arria V, Unknown, None]</parameter>
+  <parameter name="altgx_generated" value="0" />
+  <parameter name="clockSource" value="pcie_core_clk" />
+  <parameter name="contextState" value="SOPCContext" />
+  <parameter name="deviceFamily" value="Cyclone IV GX" />
+  <parameter name="ordering_code" value="IP-PCIE/4" />
+  <parameter name="p_avalon_hardwired_address_map" value="false" />
+  <parameter name="p_avalon_hw_pci_address_00" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_00_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_01" value="0x0000000080000000" />
+  <parameter name="p_avalon_hw_pci_address_01_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_02" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_02_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_03" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_03_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_04" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_04_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_05" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_05_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_06" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_06_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_07" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_07_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_08" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_08_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_09" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_09_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_10" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_10_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_11" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_11_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_12" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_12_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_13" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_13_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_14" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_14_type" value="Memory32Bit" />
+  <parameter name="p_avalon_hw_pci_address_15" value="0x0000000000000000" />
+  <parameter name="p_avalon_hw_pci_address_15_type" value="Memory32Bit" />
+  <parameter name="p_avalon_pane_count" value="2" />
+  <parameter name="p_avalon_pane_size" value="30" />
+  <parameter name="p_enable_pcie_hip_dprio" value="N/A" />
+  <parameter name="p_pci_64bit_bar" value="false" />
+  <parameter name="p_pci_64bit_bus" value="true" />
+  <parameter name="p_pci_66mhz" value="true" />
+  <parameter name="p_pci_allow_param_readback" value="false" />
+  <parameter name="p_pci_altera_arbiter" value="false" />
+  <parameter name="p_pci_arbited_devices" value="2" />
+  <parameter name="p_pci_arbiter" value="false" />
+  <parameter name="p_pci_bar_0_auto_avalon_address" value="true" />
+  <parameter name="p_pci_bar_0_auto_sized" value="true" />
+  <parameter name="p_pci_bar_0_avalon_address" value="0" />
+  <parameter name="p_pci_bar_0_hardwired" value="false" />
+  <parameter name="p_pci_bar_0_pci_address" value="0" />
+  <parameter name="p_pci_bar_0_prefetchable" value="false" />
+  <parameter name="p_pci_bar_1_auto_avalon_address" value="true" />
+  <parameter name="p_pci_bar_1_auto_sized" value="true" />
+  <parameter name="p_pci_bar_1_avalon_address" value="0" />
+  <parameter name="p_pci_bar_1_hardwired" value="false" />
+  <parameter name="p_pci_bar_1_pci_address" value="0" />
+  <parameter name="p_pci_bar_1_prefetchable" value="false" />
+  <parameter name="p_pci_bar_2_auto_avalon_address" value="false" />
+  <parameter name="p_pci_bar_2_auto_sized" value="false" />
+  <parameter name="p_pci_bar_2_avalon_address" value="0" />
+  <parameter name="p_pci_bar_2_hardwired" value="false" />
+  <parameter name="p_pci_bar_2_pci_address" value="0" />
+  <parameter name="p_pci_bar_2_prefetchable" value="true" />
+  <parameter name="p_pci_bar_3_auto_avalon_address" value="false" />
+  <parameter name="p_pci_bar_3_auto_sized" value="false" />
+  <parameter name="p_pci_bar_3_avalon_address" value="0" />
+  <parameter name="p_pci_bar_3_hardwired" value="false" />
+  <parameter name="p_pci_bar_3_pci_address" value="0" />
+  <parameter name="p_pci_bar_3_prefetchable" value="true" />
+  <parameter name="p_pci_bar_4_auto_avalon_address" value="false" />
+  <parameter name="p_pci_bar_4_auto_sized" value="false" />
+  <parameter name="p_pci_bar_4_avalon_address" value="0" />
+  <parameter name="p_pci_bar_4_hardwired" value="false" />
+  <parameter name="p_pci_bar_4_pci_address" value="0" />
+  <parameter name="p_pci_bar_4_prefetchable" value="true" />
+  <parameter name="p_pci_bar_5_auto_avalon_address" value="false" />
+  <parameter name="p_pci_bar_5_auto_sized" value="false" />
+  <parameter name="p_pci_bar_5_avalon_address" value="0" />
+  <parameter name="p_pci_bar_5_hardwired" value="false" />
+  <parameter name="p_pci_bar_5_pci_address" value="0" />
+  <parameter name="p_pci_bar_5_prefetchable" value="true" />
+  <parameter name="p_pci_bus_access_address_width" value="28" />
+  <parameter name="p_pci_global_reset" value="false" />
+  <parameter name="p_pci_host_bridge" value="false" />
+  <parameter name="p_pci_impl_cra_av_slave_port" value="true" />
+  <parameter name="p_pci_master" value="true" />
+  <parameter name="p_pci_master_bursts" value="true" />
+  <parameter name="p_pci_master_concurrent_reads" value="false" />
+  <parameter name="p_pci_master_data_width" value="64" />
+  <parameter name="p_pci_maximum_burst_size" value="128" />
+  <parameter name="p_pci_maximum_burst_size_a2p" value="128" />
+  <parameter name="p_pci_maximum_pending_read_transactions_a2p" value="8" />
+  <parameter name="p_pci_non_pref_av_master_port" value="true" />
+  <parameter name="p_pci_not_target_only_port" value="false" />
+  <parameter name="p_pci_pref_av_master_port" value="true" />
+  <parameter name="p_pci_reqn_gntn_pins" value="true" />
+  <parameter name="p_pci_single_clock" value="true" />
+  <parameter name="p_pci_target_bursts" value="true" />
+  <parameter name="p_pci_target_concurrent_reads" value="false" />
+  <parameter name="p_pci_user_specified_bars" value="false" />
+  <parameter name="p_pcie_L1_exit_latency_common_clock" value="&gt;64 us" />
+  <parameter name="p_pcie_L1_exit_latency_separate_clock" value="&gt;64 us" />
+  <parameter name="p_pcie_advanced_error_int_num" value="0x00000000" />
+  <parameter name="p_pcie_advanced_error_reporting" value="false" />
+  <parameter name="p_pcie_alt2gxb" value="true" />
+  <parameter name="p_pcie_altgx_keyParameters_used">{p_pcie_enable_hip=1, p_pcie_number_of_lanes=x1, p_pcie_phy=Cyclone IV GX, p_pcie_rate=Gen1 (2.5 Gbps), p_pcie_txrx_clock=100 MHz}</parameter>
+  <parameter name="p_pcie_app_signal_interface" value="AvalonMM" />
+  <parameter name="p_pcie_attention_button" value="false" />
+  <parameter name="p_pcie_attention_indicator" value="false" />
+  <parameter name="p_pcie_auto_configure_retry_buffer" value="true" />
+  <parameter name="p_pcie_avalon_mm_lite" value="0" />
+  <parameter name="p_pcie_bar_size_bar_0" value="Auto" />
+  <parameter name="p_pcie_bar_size_bar_1" value="Auto" />
+  <parameter name="p_pcie_bar_size_bar_2" value="N/A" />
+  <parameter name="p_pcie_bar_size_bar_3" value="N/A" />
+  <parameter name="p_pcie_bar_size_bar_4" value="N/A" />
+  <parameter name="p_pcie_bar_size_bar_5" value="N/A" />
+  <parameter name="p_pcie_bar_type_bar_0">32-bit Non-Prefetchable Memory</parameter>
+  <parameter name="p_pcie_bar_type_bar_1">32-bit Non-Prefetchable Memory</parameter>
+  <parameter name="p_pcie_bar_type_bar_2">Disable this and all higher BARs</parameter>
+  <parameter name="p_pcie_bar_type_bar_3">Disable this and all higher BARs</parameter>
+  <parameter name="p_pcie_bar_type_bar_4">Disable this and all higher BARs</parameter>
+  <parameter name="p_pcie_bar_type_bar_5">Disable this and all higher BARs</parameter>
+  <parameter name="p_pcie_bar_used_bar_0" value="true" />
+  <parameter name="p_pcie_bar_used_bar_1" value="true" />
+  <parameter name="p_pcie_bar_used_bar_2" value="false" />
+  <parameter name="p_pcie_bar_used_bar_3" value="false" />
+  <parameter name="p_pcie_bar_used_bar_4" value="false" />
+  <parameter name="p_pcie_bar_used_bar_5" value="false" />
+  <parameter name="p_pcie_channel_number" value="0" />
+  <parameter name="p_pcie_chk_io" value="0" />
+  <parameter name="p_pcie_class_code" value="0x048000" />
+  <parameter name="p_pcie_completion_data_credit_vc0" value="256" />
+  <parameter name="p_pcie_completion_data_credit_vc1" value="0" />
+  <parameter name="p_pcie_completion_data_credit_vc2" value="0" />
+  <parameter name="p_pcie_completion_data_credit_vc3" value="0" />
+  <parameter name="p_pcie_completion_data_used_space_vc0" value="4096" />
+  <parameter name="p_pcie_completion_data_used_space_vc1" value="0" />
+  <parameter name="p_pcie_completion_data_used_space_vc2" value="0" />
+  <parameter name="p_pcie_completion_data_used_space_vc3" value="0" />
+  <parameter name="p_pcie_completion_header_credit_vc0" value="48" />
+  <parameter name="p_pcie_completion_header_credit_vc1" value="0" />
+  <parameter name="p_pcie_completion_header_credit_vc2" value="0" />
+  <parameter name="p_pcie_completion_header_credit_vc3" value="0" />
+  <parameter name="p_pcie_completion_header_used_space_vc0" value="768" />
+  <parameter name="p_pcie_completion_header_used_space_vc1" value="0" />
+  <parameter name="p_pcie_completion_header_used_space_vc2" value="0" />
+  <parameter name="p_pcie_completion_header_used_space_vc3" value="0" />
+  <parameter name="p_pcie_completion_timeout" value="NONE" />
+  <parameter name="p_pcie_custom_phy_x8" value="0" />
+  <parameter name="p_pcie_custom_rx_buffer_xml" value="0" />
+  <parameter name="p_pcie_device_id" value="0x18F6" />
+  <parameter name="p_pcie_device_init_required" value="false" />
+  <parameter name="p_pcie_disable_L0s" value="false" />
+  <parameter name="p_pcie_dll_active_report_support" value="false" />
+  <parameter name="p_pcie_ecrc_check" value="false" />
+  <parameter name="p_pcie_ecrc_generation" value="false" />
+  <parameter name="p_pcie_eie_b4_nfts_count" value="4" />
+  <parameter name="p_pcie_enable_L1_aspm" value="false" />
+  <parameter name="p_pcie_enable_completion_timeout_disable" value="false" />
+  <parameter name="p_pcie_enable_fast_recovery" value="true" />
+  <parameter name="p_pcie_enable_function_msix_support" value="false" />
+  <parameter name="p_pcie_enable_hip" value="1" />
+  <parameter name="p_pcie_enable_hip_core_clk" value="0" />
+  <parameter name="p_pcie_enable_pcie_gen2_x8_es" value="0" />
+  <parameter name="p_pcie_enable_pcie_gen2_x8_s5gx" value="0" />
+  <parameter name="p_pcie_enable_root_port_endpoint_mode" value="0" />
+  <parameter name="p_pcie_enable_simple_dma" value="0" />
+  <parameter name="p_pcie_enable_slot_capability" value="false" />
+  <parameter name="p_pcie_enable_tl_bypass_mode" value="0" />
+  <parameter name="p_pcie_endpoint_L0s_acceptable_latency" value="&lt;64 ns" />
+  <parameter name="p_pcie_endpoint_L1_acceptable_latency" value="&lt;1 us" />
+  <parameter name="p_pcie_exp_rom_bar_size" value="N/A" />
+  <parameter name="p_pcie_exp_rom_bar_used" value="false" />
+  <parameter name="p_pcie_gen2_nfts_diff_clock" value="255" />
+  <parameter name="p_pcie_gen2_nfts_same_clock" value="255" />
+  <parameter name="p_pcie_implement_data_register" value="false" />
+  <parameter name="p_pcie_initiator_performance_preset" value="High" />
+  <parameter name="p_pcie_internal_clock" value="62.5 MHz" />
+  <parameter name="p_pcie_io_base_and_limit_register" value="IODisable" />
+  <parameter name="p_pcie_lanerev" value="0" />
+  <parameter name="p_pcie_link_common_clock" value="true" />
+  <parameter name="p_pcie_link_port_number" value="0x01" />
+  <parameter name="p_pcie_low_priority_virtual_channels" value="0" />
+  <parameter name="p_pcie_max_payload_size" value="256 Bytes" />
+  <parameter name="p_pcie_mem_base_and_limit_register" value="MemDisable" />
+  <parameter name="p_pcie_msi_message_64bits_address_capable" value="true" />
+  <parameter name="p_pcie_msi_message_requested" value="1" />
+  <parameter name="p_pcie_msix_pba_bir" value="0" />
+  <parameter name="p_pcie_msix_pba_offset" value="0" />
+  <parameter name="p_pcie_msix_table_bir" value="0" />
+  <parameter name="p_pcie_msix_table_offset" value="0" />
+  <parameter name="p_pcie_msix_table_size" value="0" />
+  <parameter name="p_pcie_nfts_common_clock" value="255" />
+  <parameter name="p_pcie_nfts_separate_clock" value="255" />
+  <parameter name="p_pcie_nonposted_data_credit_vc0" value="0" />
+  <parameter name="p_pcie_nonposted_data_credit_vc1" value="0" />
+  <parameter name="p_pcie_nonposted_data_credit_vc2" value="0" />
+  <parameter name="p_pcie_nonposted_data_credit_vc3" value="0" />
+  <parameter name="p_pcie_nonposted_data_used_space_vc0" value="0" />
+  <parameter name="p_pcie_nonposted_data_used_space_vc1" value="0" />
+  <parameter name="p_pcie_nonposted_data_used_space_vc2" value="0" />
+  <parameter name="p_pcie_nonposted_data_used_space_vc3" value="0" />
+  <parameter name="p_pcie_nonposted_header_credit_vc0" value="30" />
+  <parameter name="p_pcie_nonposted_header_credit_vc1" value="0" />
+  <parameter name="p_pcie_nonposted_header_credit_vc2" value="0" />
+  <parameter name="p_pcie_nonposted_header_credit_vc3" value="0" />
+  <parameter name="p_pcie_nonposted_header_used_space_vc0" value="480" />
+  <parameter name="p_pcie_nonposted_header_used_space_vc1" value="0" />
+  <parameter name="p_pcie_nonposted_header_used_space_vc2" value="0" />
+  <parameter name="p_pcie_nonposted_header_used_space_vc3" value="0" />
+  <parameter name="p_pcie_number_of_lanes" value="x1" />
+  <parameter name="p_pcie_phy" value="Cyclone IV GX" />
+  <parameter name="p_pcie_phy_interface" value="Serial" />
+  <parameter name="p_pcie_pme_pending" value="false" />
+  <parameter name="p_pcie_pme_reg_id" value="0x0000" />
+  <parameter name="p_pcie_port_type" value="Native Endpoint" />
+  <parameter name="p_pcie_posted_data_credit_vc0" value="198" />
+  <parameter name="p_pcie_posted_data_credit_vc1" value="0" />
+  <parameter name="p_pcie_posted_data_credit_vc2" value="0" />
+  <parameter name="p_pcie_posted_data_credit_vc3" value="0" />
+  <parameter name="p_pcie_posted_data_used_space_vc0" value="3168" />
+  <parameter name="p_pcie_posted_data_used_space_vc1" value="0" />
+  <parameter name="p_pcie_posted_data_used_space_vc2" value="0" />
+  <parameter name="p_pcie_posted_data_used_space_vc3" value="0" />
+  <parameter name="p_pcie_posted_header_credit_vc0" value="28" />
+  <parameter name="p_pcie_posted_header_credit_vc1" value="0" />
+  <parameter name="p_pcie_posted_header_credit_vc2" value="0" />
+  <parameter name="p_pcie_posted_header_credit_vc3" value="0" />
+  <parameter name="p_pcie_posted_header_used_space_vc0" value="448" />
+  <parameter name="p_pcie_posted_header_used_space_vc1" value="0" />
+  <parameter name="p_pcie_posted_header_used_space_vc2" value="0" />
+  <parameter name="p_pcie_posted_header_used_space_vc3" value="0" />
+  <parameter name="p_pcie_power_indicator" value="false" />
+  <parameter name="p_pcie_rate" value="Gen1 (2.5 Gbps)" />
+  <parameter name="p_pcie_rate_match_fifo" value="true" />
+  <parameter name="p_pcie_retry_buffer_size" value="2 KBytes" />
+  <parameter name="p_pcie_retry_fifo_depth" value="64" />
+  <parameter name="p_pcie_revision_id" value="0x02" />
+  <parameter name="p_pcie_rx_buffer_preset" value="Default" />
+  <parameter name="p_pcie_rx_buffer_size_string_vc0" value="8960 Bytes" />
+  <parameter name="p_pcie_rx_buffer_size_string_vc1" value="0" />
+  <parameter name="p_pcie_rx_buffer_size_string_vc2" value="0" />
+  <parameter name="p_pcie_rx_buffer_size_string_vc3" value="0" />
+  <parameter name="p_pcie_rx_buffer_size_vc0" value="8960" />
+  <parameter name="p_pcie_rx_buffer_size_vc1" value="0" />
+  <parameter name="p_pcie_rx_buffer_size_vc2" value="0" />
+  <parameter name="p_pcie_rx_buffer_size_vc3" value="0" />
+  <parameter name="p_pcie_slot_capabilities" value="0x00000000" />
+  <parameter name="p_pcie_special_phy_gl" value="0" />
+  <parameter name="p_pcie_special_phy_px" value="1" />
+  <parameter name="p_pcie_subsystem_device_id" value="0x18F6" />
+  <parameter name="p_pcie_subsystem_vendor_id" value="0x1B55" />
+  <parameter name="p_pcie_surprise_down_error_support" value="false" />
+  <parameter name="p_pcie_tag_supported" value="32" />
+  <parameter name="p_pcie_target_performance_preset" value="Maximum" />
+  <parameter name="p_pcie_test_out_width" value="None" />
+  <parameter name="p_pcie_threshold_for_L0s_entry" value="8192 ns" />
+  <parameter name="p_pcie_total_header_credit_vc0" value="106" />
+  <parameter name="p_pcie_total_header_credit_vc1" value="0" />
+  <parameter name="p_pcie_total_header_credit_vc2" value="0" />
+  <parameter name="p_pcie_total_header_credit_vc3" value="0" />
+  <parameter name="p_pcie_txrx_clock" value="100 MHz" />
+  <parameter name="p_pcie_underSOPCBuilder" value="true" />
+  <parameter name="p_pcie_use_crc_forwarding" value="false" />
+  <parameter name="p_pcie_use_parity" value="false" />
+  <parameter name="p_pcie_variation_name">pcie_compiler_0_core</parameter>
+  <parameter name="p_pcie_vendor_id" value="0x1B55" />
+  <parameter name="p_pcie_version" value="1.1" />
+  <parameter name="p_pcie_virutal_channels" value="1" />
+  <parameter name="pref_nonp_independent" value="false" />
+  <parameter name="uiAvalonHWAddress0" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress1" value="0x80000000" />
+  <parameter name="uiAvalonHWAddress10" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress11" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress12" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress13" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress14" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress15" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress2" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress3" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress4" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress5" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress6" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress7" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress8" value="0x00000000" />
+  <parameter name="uiAvalonHWAddress9" value="0x00000000" />
+  <parameter name="uiBar0Prefetchable" value="false" />
+  <parameter name="uiBar1Prefetchable" value="false" />
+  <parameter name="uiBar2Prefetchable" value="true" />
+  <parameter name="uiBar3Prefetchable" value="true" />
+  <parameter name="uiBar4Prefetchable" value="true" />
+  <parameter name="uiBar5Prefetchable" value="true" />
+  <parameter name="ui_pcie_msix_pba_bir" value="0" />
+  <parameter name="ui_pcie_msix_table_bir" value="0" />
+ </module>
+ <module kind="ci_bridge" version="1.0" enabled="1" name="ci_bridge_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module
+   kind="avalon64_to_avalon8"
+   version="1.0"
+   enabled="1"
+   name="avalon64_to_avalon8_0">
+  <parameter name="OUT_ADDR_WIDTH" value="18" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module kind="dvb_ts" version="1.0" enabled="1" name="dvb_ts_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <module kind="dvb_ts" version="1.0" enabled="1" name="dvb_ts_1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="62500000" />
+ </module>
+ <connection
+   kind="avalon_streaming"
+   version="11.1"
+   start="twi_master_0.avalon_streaming_source"
+   end="fifo_in_8b_sync_0.avalon_streaming_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="11.1"
+   start="fifo_out_8b_sync_0.avalon_streaming_source"
+   end="twi_master_0.avalon_streaming_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="11.1"
+   start="twi_master_1.avalon_streaming_source"
+   end="fifo_in_8b_sync_1.avalon_streaming_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="11.1"
+   start="fifo_out_8b_sync_1.avalon_streaming_source"
+   end="twi_master_1.avalon_streaming_sink" />
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="int_ctrl_0.avalon_cra">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4890" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="spi_master_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="twi_master_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4800" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="fifo_out_8b_sync_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4810" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="fifo_in_8b_sync_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4820" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="twi_master_1.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4840" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="fifo_in_8b_sync_1.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4860" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="fifo_out_8b_sync_1.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4850" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="gpout_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4880" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="pipeline_bridge_0.m1"
+   end="int_ctrl_0.avalon_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="dvb_dma_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4900" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="dvb_dma_1.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4940" />
+ </connection>
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="pcie_compiler_0.avalon_clk" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="pcie_compiler_0.cal_blk_clk" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="spi_master_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="twi_master_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="fifo_out_8b_sync_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="fifo_in_8b_sync_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="twi_master_1.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="fifo_out_8b_sync_1.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="fifo_in_8b_sync_1.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="int_ctrl_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="gpout_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="dma_arbiter_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="pipeline_bridge_0.clk" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="dvb_dma_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="dvb_dma_1.clock" />
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="dma_arbiter_0.avalon_master"
+   end="pcie_compiler_0.Tx_Interface">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="pcie_compiler_0.bar0_Non_Prefetchable"
+   end="pipeline_bridge_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="pcie_compiler_0.Control_Register_Access">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="11.1"
+   start="pcie_compiler_0.RxmIrq"
+   end="int_ctrl_0.interrupt_sender">
+  <parameter name="irqNumber" value="0" />
+ </connection>
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="ci_bridge_0.clock" />
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="ci_bridge_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4980" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="pcie_compiler_0.bar1_Non_Prefetchable"
+   end="avalon64_to_avalon8_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00040000" />
+ </connection>
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="avalon64_to_avalon8_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="dvb_ts_0.clock" />
+ <connection
+   kind="clock"
+   version="11.1"
+   start="pcie_compiler_0.pcie_core_clk"
+   end="dvb_ts_1.clock" />
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="dvb_ts_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x5000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="11.1"
+   start="int_ctrl_0.avalon_master"
+   end="dvb_ts_1.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x5800" />
+ </connection>
+</system>

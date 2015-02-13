@@ -1,0 +1,748 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+# Date created = 16:41:37  August 14, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		netup_unidvb_top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE EP4CGX22CF19C8
+set_global_assignment -name TOP_LEVEL_ENTITY netup_unidvb_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:41:37  AUGUST 14, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY out
+set_global_assignment -name PROJECT_SHOW_ENTITY_NAME ON
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL3
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 1
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING OFF
+set_global_assignment -name SYNCHRONIZER_IDENTIFICATION AUTO
+set_instance_assignment -name SYNCHRONIZER_IDENTIFICATION FORCED -to *_meta*
+set_global_assignment -name CYCLONEIII_CONFIGURATION_SCHEME "ACTIVE SERIAL"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS OUTPUT DRIVING GROUND"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name GENERATE_RBF_FILE OFF
+set_global_assignment -name MESSAGE_DISABLE 176674
+set_location_assignment PIN_C16 -to nPERST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nPERST
+set_location_assignment PIN_K17 -to SYSCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SYSCLK
+set_location_assignment PIN_G10 -to PCI_REFCLK
+set_location_assignment PIN_G9 -to "PCI_REFCLK(n)"
+set_instance_assignment -name IO_STANDARD HCSL -to PCI_REFCLK
+set_location_assignment PIN_T2 -to PCI_PER0
+set_location_assignment PIN_T1 -to "PCI_PER0(n)"
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to PCI_PER0
+set_instance_assignment -name INPUT_TERMINATION "OCT 100 OHMS" -to PCI_PER0
+set_location_assignment PIN_P2 -to PCI_PET0
+set_location_assignment PIN_P1 -to "PCI_PET0(n)"
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to PCI_PET0
+set_location_assignment PIN_R9 -to IIC0_SCL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IIC0_SCL
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to IIC0_SCL
+set_location_assignment PIN_R8 -to IIC0_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IIC0_SDA
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to IIC0_SDA
+set_location_assignment PIN_P6 -to IIC1_SCL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IIC1_SCL
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to IIC1_SCL
+set_location_assignment PIN_R6 -to IIC1_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IIC1_SDA
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to IIC1_SDA
+set_location_assignment PIN_C5 -to FLASH_nCS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FLASH_nCS
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to FLASH_nCS
+set_location_assignment PIN_D5 -to FLASH_SCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FLASH_SCLK
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to FLASH_SCLK
+set_location_assignment PIN_A4 -to FLASH_MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FLASH_MISO
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to FLASH_MISO
+set_location_assignment PIN_B4 -to FLASH_MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FLASH_MOSI
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to FLASH_MOSI
+set_location_assignment PIN_M10 -to FEA_CLOCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_CLOCK
+set_location_assignment PIN_V10 -to FEA_START
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_START
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_START
+set_location_assignment PIN_V9 -to FEA_VALID
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_VALID
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_VALID
+set_location_assignment PIN_T12 -to FEA_DATA[0]
+set_location_assignment PIN_U12 -to FEA_DATA[1]
+set_location_assignment PIN_R11 -to FEA_DATA[2]
+set_location_assignment PIN_T11 -to FEA_DATA[3]
+set_location_assignment PIN_P10 -to FEA_DATA[4]
+set_location_assignment PIN_R10 -to FEA_DATA[5]
+set_location_assignment PIN_T10 -to FEA_DATA[6]
+set_location_assignment PIN_U10 -to FEA_DATA[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_DATA[0]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_DATA[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_DATA[1]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_DATA[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_DATA[2]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_DATA[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_DATA[3]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_DATA[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_DATA[4]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_DATA[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_DATA[5]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_DATA[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_DATA[6]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_DATA[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_DATA[7]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_DATA[7]
+set_location_assignment PIN_M9 -to FEB_CLOCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_CLOCK
+set_location_assignment PIN_V6 -to FEB_START
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_START
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_START
+set_location_assignment PIN_U6 -to FEB_VALID
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_VALID
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_VALID
+set_location_assignment PIN_V8 -to FEB_DATA[0]
+set_location_assignment PIN_T8 -to FEB_DATA[1]
+set_location_assignment PIN_V7 -to FEB_DATA[2]
+set_location_assignment PIN_U7 -to FEB_DATA[3]
+set_location_assignment PIN_T7 -to FEB_DATA[4]
+set_location_assignment PIN_R7 -to FEB_DATA[5]
+set_location_assignment PIN_N7 -to FEB_DATA[6]
+set_location_assignment PIN_N6 -to FEB_DATA[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_DATA[0]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_DATA[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_DATA[1]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_DATA[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_DATA[2]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_DATA[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_DATA[3]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_DATA[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_DATA[4]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_DATA[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_DATA[5]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_DATA[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_DATA[6]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_DATA[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_DATA[7]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_DATA[7]
+set_location_assignment PIN_D14 -to CI_ADDR[0]
+set_location_assignment PIN_A15 -to CI_ADDR[1]
+set_location_assignment PIN_B15 -to CI_ADDR[2]
+set_location_assignment PIN_B16 -to CI_ADDR[3]
+set_location_assignment PIN_A17 -to CI_ADDR[4]
+set_location_assignment PIN_A18 -to CI_ADDR[5]
+set_location_assignment PIN_C15 -to CI_ADDR[6]
+set_location_assignment PIN_D15 -to CI_ADDR[7]
+set_location_assignment PIN_E16 -to CI_ADDR[8]
+set_location_assignment PIN_F15 -to CI_ADDR[9]
+set_location_assignment PIN_F17 -to CI_ADDR[10]
+set_location_assignment PIN_F16 -to CI_ADDR[11]
+set_location_assignment PIN_D16 -to CI_ADDR[12]
+set_location_assignment PIN_E15 -to CI_ADDR[13]
+set_location_assignment PIN_D17 -to CI_ADDR[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[0]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[0]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[1]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[1]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[2]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[2]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[3]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[3]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[4]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[4]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[5]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[5]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[6]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[6]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[7]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[7]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[8]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[8]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[9]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[9]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[10]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[10]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[10]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[11]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[11]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[11]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[12]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[12]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[12]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[13]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[13]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[13]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_ADDR[14]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_ADDR[14]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_ADDR[14]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_ADDR[14]
+set_location_assignment PIN_P18 -to CI_DATA[0]
+set_location_assignment PIN_N18 -to CI_DATA[1]
+set_location_assignment PIN_N17 -to CI_DATA[2]
+set_location_assignment PIN_T18 -to CI_DATA[3]
+set_location_assignment PIN_R16 -to CI_DATA[4]
+set_location_assignment PIN_R17 -to CI_DATA[5]
+set_location_assignment PIN_R18 -to CI_DATA[6]
+set_location_assignment PIN_P16 -to CI_DATA[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_DATA[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_DATA[0]
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to CI_DATA[0]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_DATA[0]
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CI_DATA[0]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CI_DATA[0]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_DATA[0]
+set_instance_assignment -name OUTPUT_ENABLE_DELAY 0 -to CI_DATA[0]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CI_DATA[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_DATA[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_DATA[1]
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to CI_DATA[1]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_DATA[1]
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CI_DATA[1]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CI_DATA[1]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_DATA[1]
+set_instance_assignment -name OUTPUT_ENABLE_DELAY 0 -to CI_DATA[1]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CI_DATA[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_DATA[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_DATA[2]
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to CI_DATA[2]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_DATA[2]
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CI_DATA[2]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CI_DATA[2]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_DATA[2]
+set_instance_assignment -name OUTPUT_ENABLE_DELAY 0 -to CI_DATA[2]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CI_DATA[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_DATA[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_DATA[3]
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to CI_DATA[3]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_DATA[3]
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CI_DATA[3]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CI_DATA[3]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_DATA[3]
+set_instance_assignment -name OUTPUT_ENABLE_DELAY 0 -to CI_DATA[3]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CI_DATA[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_DATA[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_DATA[4]
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to CI_DATA[4]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_DATA[4]
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CI_DATA[4]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CI_DATA[4]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_DATA[4]
+set_instance_assignment -name OUTPUT_ENABLE_DELAY 0 -to CI_DATA[4]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CI_DATA[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_DATA[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_DATA[5]
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to CI_DATA[5]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_DATA[5]
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CI_DATA[5]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CI_DATA[5]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_DATA[5]
+set_instance_assignment -name OUTPUT_ENABLE_DELAY 0 -to CI_DATA[5]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CI_DATA[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_DATA[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_DATA[6]
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to CI_DATA[6]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_DATA[6]
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CI_DATA[6]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CI_DATA[6]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_DATA[6]
+set_instance_assignment -name OUTPUT_ENABLE_DELAY 0 -to CI_DATA[6]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CI_DATA[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_DATA[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_DATA[7]
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to CI_DATA[7]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_DATA[7]
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CI_DATA[7]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CI_DATA[7]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_DATA[7]
+set_instance_assignment -name OUTPUT_ENABLE_DELAY 0 -to CI_DATA[7]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CI_DATA[7]
+set_location_assignment PIN_A16 -to CI_nREG
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_nREG
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_nREG
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_nREG
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_nREG
+set_location_assignment PIN_B7 -to CI_nIOWR
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_nIOWR
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_nIOWR
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_nIOWR
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_nIOWR
+set_location_assignment PIN_C7 -to CI_nIORD
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_nIORD
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_nIORD
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_nIORD
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_nIORD
+set_location_assignment PIN_A7 -to CI_nWR
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_nWR
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_nWR
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_nWR
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_nWR
+set_location_assignment PIN_D7 -to CI_nOE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_nOE
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_nOE
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_nOE
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_nOE
+set_location_assignment PIN_U18 -to CI_BUS_DIR
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CI_BUS_DIR
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CI_BUS_DIR
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CI_BUS_DIR
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CI_BUS_DIR
+set_location_assignment PIN_C6 -to CIA_RST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_RST
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_RST
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_RST
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_RST
+set_location_assignment PIN_B5 -to CIA_nRSTEN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_nRSTEN
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_nRSTEN
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_nRSTEN
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_nRSTEN
+set_location_assignment PIN_B6 -to CIA_nCE1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_nCE1
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_nCE1
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_nCE1
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_nCE1
+set_location_assignment PIN_T17 -to CIA_nBUS_OE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_nBUS_OE
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_nBUS_OE
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_nBUS_OE
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_nBUS_OE
+set_location_assignment PIN_G17 -to CIA_nIREQ
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_nIREQ
+set_location_assignment PIN_G16 -to CIA_nWAIT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_nWAIT
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_nWAIT
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_nWAIT
+set_location_assignment PIN_M16 -to CIA_nCD1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_nCD1
+set_location_assignment PIN_F18 -to CIA_nCD2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_nCD2
+set_location_assignment PIN_D13 -to CIA_MCLKI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MCLKI
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MCLKI
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MCLKI
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MCLKI
+set_location_assignment PIN_C8 -to CIA_MISTRT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MISTRT
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MISTRT
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MISTRT
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MISTRT
+set_location_assignment PIN_B13 -to CIA_MIVAL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MIVAL
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MIVAL
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MIVAL
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MIVAL
+set_location_assignment PIN_D9 -to CIA_MDI[0]
+set_location_assignment PIN_A9 -to CIA_MDI[1]
+set_location_assignment PIN_B10 -to CIA_MDI[2]
+set_location_assignment PIN_A11 -to CIA_MDI[3]
+set_location_assignment PIN_A13 -to CIA_MDI[4]
+set_location_assignment PIN_C13 -to CIA_MDI[5]
+set_location_assignment PIN_A14 -to CIA_MDI[6]
+set_location_assignment PIN_C14 -to CIA_MDI[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDI[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MDI[0]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MDI[0]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MDI[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDI[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MDI[1]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MDI[1]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MDI[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDI[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MDI[2]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MDI[2]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MDI[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDI[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MDI[3]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MDI[3]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MDI[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDI[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MDI[4]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MDI[4]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MDI[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDI[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MDI[5]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MDI[5]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MDI[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDI[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MDI[6]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MDI[6]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MDI[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDI[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIA_MDI[7]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIA_MDI[7]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIA_MDI[7]
+set_location_assignment PIN_J18 -to CIA_MCLKO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MCLKO
+set_location_assignment PIN_J17 -to CIA_MOSTRT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MOSTRT
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MOSTRT
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MOSTRT
+set_location_assignment PIN_K16 -to CIA_MOVAL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MOVAL
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MOVAL
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MOVAL
+set_location_assignment PIN_J16 -to CIA_MDO[0]
+set_location_assignment PIN_H16 -to CIA_MDO[1]
+set_location_assignment PIN_G18 -to CIA_MDO[2]
+set_location_assignment PIN_M17 -to CIA_MDO[3]
+set_location_assignment PIN_M18 -to CIA_MDO[4]
+set_location_assignment PIN_L15 -to CIA_MDO[5]
+set_location_assignment PIN_L18 -to CIA_MDO[6]
+set_location_assignment PIN_K15 -to CIA_MDO[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDO[0]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MDO[0]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MDO[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDO[1]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MDO[1]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MDO[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDO[2]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MDO[2]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MDO[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDO[3]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MDO[3]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MDO[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDO[4]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MDO[4]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MDO[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDO[5]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MDO[5]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MDO[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDO[6]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MDO[6]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MDO[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIA_MDO[7]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_MDO[7]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_MDO[7]
+set_location_assignment PIN_D6 -to CIB_RST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_RST
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_RST
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_RST
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_RST
+set_location_assignment PIN_A5 -to CIB_nRSTEN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_nRSTEN
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_nRSTEN
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_nRSTEN
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_nRSTEN
+set_location_assignment PIN_A6 -to CIB_nCE1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_nCE1
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_nCE1
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_nCE1
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_nCE1
+set_location_assignment PIN_V17 -to CIB_nBUS_OE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_nBUS_OE
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_nBUS_OE
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_nBUS_OE
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_nBUS_OE
+set_location_assignment PIN_R12 -to CIB_nIREQ
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_nIREQ
+set_location_assignment PIN_V13 -to CIB_nWAIT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_nWAIT
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_nWAIT
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_nWAIT
+set_location_assignment PIN_V18 -to CIB_nCD1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_nCD1
+set_location_assignment PIN_U13 -to CIB_nCD2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_nCD2
+set_location_assignment PIN_D11 -to CIB_MCLKI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MCLKI
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MCLKI
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MCLKI
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MCLKI
+set_location_assignment PIN_A8 -to CIB_MISTRT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MISTRT
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MISTRT
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MISTRT
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MISTRT
+set_location_assignment PIN_C11 -to CIB_MIVAL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MIVAL
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MIVAL
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MIVAL
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MIVAL
+set_location_assignment PIN_C9 -to CIB_MDI[0]
+set_location_assignment PIN_B9 -to CIB_MDI[1]
+set_location_assignment PIN_C10 -to CIB_MDI[2]
+set_location_assignment PIN_A10 -to CIB_MDI[3]
+set_location_assignment PIN_D10 -to CIB_MDI[4]
+set_location_assignment PIN_E10 -to CIB_MDI[5]
+set_location_assignment PIN_C12 -to CIB_MDI[6]
+set_location_assignment PIN_D12 -to CIB_MDI[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDI[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MDI[0]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MDI[0]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MDI[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDI[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MDI[1]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MDI[1]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MDI[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDI[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MDI[2]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MDI[2]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MDI[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDI[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MDI[3]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MDI[3]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MDI[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDI[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MDI[4]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MDI[4]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MDI[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDI[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MDI[5]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MDI[5]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MDI[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDI[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MDI[6]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MDI[6]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MDI[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDI[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to CIB_MDI[7]
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CIB_MDI[7]
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to CIB_MDI[7]
+set_location_assignment PIN_V11 -to CIB_MCLKO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MCLKO
+set_location_assignment PIN_V14 -to CIB_MOSTRT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MOSTRT
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MOSTRT
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MOSTRT
+set_location_assignment PIN_T14 -to CIB_MOVAL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MOVAL
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MOVAL
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MOVAL
+set_location_assignment PIN_P13 -to CIB_MDO[0]
+set_location_assignment PIN_R13 -to CIB_MDO[1]
+set_location_assignment PIN_T13 -to CIB_MDO[2]
+set_location_assignment PIN_T16 -to CIB_MDO[3]
+set_location_assignment PIN_U16 -to CIB_MDO[4]
+set_location_assignment PIN_V16 -to CIB_MDO[5]
+set_location_assignment PIN_U15 -to CIB_MDO[6]
+set_location_assignment PIN_V15 -to CIB_MDO[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDO[0]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MDO[0]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MDO[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDO[1]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MDO[1]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MDO[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDO[2]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MDO[2]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MDO[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDO[3]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MDO[3]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MDO[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDO[4]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MDO[4]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MDO[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDO[5]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MDO[5]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MDO[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDO[6]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MDO[6]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MDO[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CIB_MDO[7]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_MDO[7]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_MDO[7]
+set_location_assignment PIN_T9 -to RFA_CTL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RFA_CTL
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to RFA_CTL
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to RFA_CTL
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to RFA_CTL
+set_location_assignment PIN_R14 -to FEA_nRST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_nRST
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to FEA_nRST
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to FEA_nRST
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to FEA_nRST
+set_location_assignment PIN_T15 -to FEA_nIRQ0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_nIRQ0
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_nIRQ0
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to FEA_nIRQ0
+set_location_assignment PIN_U9 -to FEA_nIRQ1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_nIRQ1
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEA_nIRQ1
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to FEA_nIRQ1
+set_location_assignment PIN_V5 -to RFB_CTL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RFB_CTL
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to RFB_CTL
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to RFB_CTL
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to RFB_CTL
+set_location_assignment PIN_T6 -to FEB_nRST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_nRST
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to FEB_nRST
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to FEB_nRST
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to FEB_nRST
+set_location_assignment PIN_N5 -to FEB_nIRQ0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_nIRQ0
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_nIRQ0
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to FEB_nIRQ0
+set_location_assignment PIN_M7 -to FEB_nIRQ1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_nIRQ1
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to FEB_nIRQ1
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to FEB_nIRQ1
+set_location_assignment PIN_C18 -to SW_nEN[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW_nEN[0]
+set_location_assignment PIN_C17 -to SW_nEN[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW_nEN[1]
+set_location_assignment PIN_D18 -to SW_nOC[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW_nOC[0]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to SW_nOC[0]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to SW_nOC[0]
+set_location_assignment PIN_B18 -to SW_nOC[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW_nOC[1]
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to SW_nOC[1]
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to SW_nOC[1]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_R15 -to FEA_TU_nRST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEA_TU_nRST
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to FEA_TU_nRST
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to FEA_TU_nRST
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to FEA_TU_nRST
+set_location_assignment PIN_P12 -to FEB_TU_nRST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FEB_TU_nRST
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to FEB_TU_nRST
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to FEB_TU_nRST
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to FEB_TU_nRST
+set_global_assignment -name POWER_USE_TA_VALUE 55
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_nCD1
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_nCD1
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_nCD2
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_nCD2
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_nCD1
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_nCD1
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_nCD2
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_nCD2
+set_instance_assignment -name RESERVE_PIN "AS OUTPUT DRIVING GROUND" -to SW_nEN[0]
+set_instance_assignment -name RESERVE_PIN "AS OUTPUT DRIVING GROUND" -to SW_nEN[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SW_nOC[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SW_nOC[1]
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIA_nIREQ
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIA_nIREQ
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CIB_nIREQ
+set_instance_assignment -name PAD_TO_INPUT_REGISTER_DELAY 0 -to CIB_nIREQ
+set_global_assignment -name MESSAGE_DISABLE 169180
+set_global_assignment -name MESSAGE_DISABLE 169203
+set_global_assignment -name MESSAGE_DISABLE 169177
+set_location_assignment PIN_P15 -to LED0_GRN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED0_GRN
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to LED0_GRN
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to LED0_GRN
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to LED0_GRN
+set_location_assignment PIN_N15 -to LED0_RED
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED0_RED
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to LED0_RED
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to LED0_RED
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to LED0_RED
+set_location_assignment PIN_L16 -to LED1_GRN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED1_GRN
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to LED1_GRN
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to LED1_GRN
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to LED1_GRN
+set_location_assignment PIN_G15 -to LED1_RED
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED1_RED
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to LED1_RED
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to LED1_RED
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to LED1_RED
+set_location_assignment PIN_N16 -to LED_RSRV0
+set_instance_assignment -name RESERVE_PIN "AS INPUT TRI-STATED" -to LED_RSRV0
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to LED_RSRV0
+set_location_assignment PIN_E18 -to LED_RSRV1
+set_instance_assignment -name RESERVE_PIN "AS INPUT TRI-STATED" -to LED_RSRV1
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to LED_RSRV1
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION ON
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_40MHZ
+set_global_assignment -name DEVICE_MIGRATION_LIST "EP4CGX22CF19C8,EP4CGX30CF19C8"
+set_global_assignment -name CONFIGURATION_VCCIO_LEVEL 3.3V
+set_global_assignment -name RESERVE_DATA7_THROUGH_DATA2_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to nPERST
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to SYSCLK
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VHDL_FILE afifo_ptr.vhd
+set_global_assignment -name VHDL_FILE dvb_ts_shaper.vhd
+set_global_assignment -name VERILOG_FILE "ip_compiler_for_pci_express-library/altpcie_rs_serdes.v"
+set_global_assignment -name VERILOG_FILE "ip_compiler_for_pci_express-library/altpcie_reconfig_3cgx.v"
+set_global_assignment -name VHDL_FILE pcie_compiler_0_serdes.vhd
+set_global_assignment -name QIP_FILE dvb_dma_fifo_ram.qip
+set_global_assignment -name QIP_FILE unici_core.qip
+set_global_assignment -name SDC_FILE Dual_Universal_CI.sdc
+set_global_assignment -name VHDL_FILE dvb_ts_sync.vhd
+set_global_assignment -name QIP_FILE gxb_pll.qip
+set_global_assignment -name QIP_FILE dvb_pll.qip
+set_global_assignment -name VHDL_FILE pipeline_bridge_0.vhd
+set_global_assignment -name VHDL_FILE unici_core_burst_0.vhd
+set_global_assignment -name VHDL_FILE unici_core_burst_1.vhd
+set_global_assignment -name VHDL_FILE unici_core.vhd
+set_global_assignment -name VHDL_FILE Dual_Universal_CI.vhd
+set_global_assignment -name SEARCH_PATH altera/11.1/quartus/libraries/vhdl/ieee/ -tag from_archive
+set_global_assignment -name SEARCH_PATH "ip_compiler_for_pci_express-library/" -tag from_archive
+set_global_assignment -name SEARCH_PATH megafunctions/ -tag from_archive

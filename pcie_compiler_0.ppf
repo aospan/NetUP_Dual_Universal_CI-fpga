@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<pinplan blockname="pcie_block" fileref="./pcie_compiler_0.ppx" variation_name="pcie_compiler_0" megafunction_name="IP Compiler for PCI Express" />
