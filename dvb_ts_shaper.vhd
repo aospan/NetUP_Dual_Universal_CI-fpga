@@ -22,6 +22,8 @@ entity dvb_ts_shaper is
 		-- system domain
 		rst			: in std_logic;
 		clk			: in std_logic;
+		-- test
+		bypass_test	: in std_logic;
 		--
 		clkdiv			: in std_logic_vector(3 downto 0);
 		--
@@ -119,7 +121,7 @@ begin
 		);
 
 	fifo_we <= fifo_not_full(fifo_wr_ptr, fifo_rd_ptr_sync) and dvb_indval;
-	fifo_re <= fifo_not_empty(fifo_wr_ptr_sync, fifo_rd_ptr) and (fifo_ram_latch_clk and dvb_out_clk_edge);
+	fifo_re <= fifo_not_empty(fifo_wr_ptr_sync, fifo_rd_ptr) and (fifo_ram_latch_clk and dvb_out_clk_edge) and not bypass_test;
 	fifo_fill <= fifo_water_level(fifo_wr_ptr, fifo_rd_ptr_sync);
 
 	process (rst, clk)
@@ -165,7 +167,7 @@ begin
 			fifo_ram_reg_clk <= fifo_ram_latch_clk;
 			--
 			dvb_out_clk_en <= fifo_ram_reg_clk and not fifo_ram_latch_clk;
-			dvb_out_clk <= fifo_ram_reg_clk;
+			dvb_out_clk <= fifo_ram_reg_clk and not bypass_test;
 			if dvb_out_clk_en then
 				dvb_out_dval <= fifo_ram_reg_valid;
 				dvb_out_data <= fifo_ram_reg(7 downto 0);

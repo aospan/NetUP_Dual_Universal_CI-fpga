@@ -175,6 +175,8 @@ begin
 			rst		=> rst,
 			clk		=> clk,
 			--
+			bypass_test		=> cam_bypass,
+			--
 			clkdiv	=> X"2",
 			--
 			dvb_indrdy		=> open,
